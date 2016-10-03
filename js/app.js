@@ -101,7 +101,7 @@ var getInspiration = function(tag) {
 	};
 
 	$.ajax({
-		url: "http://api.stackexchange.com/2.2/tags/" + request.tag + "/top-answerers/all_time",
+		url: "https://api.stackexchange.com/2.2/tags/" + request.tag + "/top-answerers/all_time",
 		data: request,
 		dataType: "jsonp",//use jsonp to avoid cross origin issues
 		type: "GET",
